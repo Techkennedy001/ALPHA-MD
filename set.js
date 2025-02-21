@@ -29,8 +29,8 @@ module.exports = { session: process.env.SESSION_ID || 'ALPHA;;;H4sIAAAAAAAAA5VU2
     GREET : process.env.GREET || "no", 
     VOICE_CHATBOT: process.env.VOICE_CHATBOT || 'no',
     VOICE_CHATBOT_INBOX: process.env.VOICE_CHATBOT_INBOX || 'yes',
-    TIMEZONE : process.env.TIMEZONE || "America/Chicago",              
-    AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || 'viewed by alpha md',   
+              
+    AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || 'viewed by alpha',   
     AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || 'no',
     AUTOBIO: process.env.AUTOBIO || 'no',       
     ANTICALL_MSG : process.env.ANTICALL_MSG || 'call declined',             
@@ -62,7 +62,7 @@ module.exports = { session: process.env.SESSION_ID || 'ALPHA;;;H4sIAAAAAAAAA5VU2
      protocol: 'postgres',
      dialectOptions: {
          native: true,
-         ssl: { require: true, rejectUnauthorized: false },
+         ssl: { require: true rejectUnauthorized: false },
      },
      logging: false,
 }),*/
